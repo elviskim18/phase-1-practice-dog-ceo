@@ -33,7 +33,7 @@ function displayBreed(dogBreeds){
         if(breedType.style.color = "black"){
             breedType.style.color = "red"
         }
-        else if(breedType.style.color = "red"){
+        else if(breedType.style.color = "red"){   //this is not working as it should
             breedType.style.color = "yellow"
         }
         
@@ -45,3 +45,5 @@ function breed(info){
     const dogBreed = Object.keys(info.message);
     dogBreed.forEach((element) => displayBreed(element))
 }
+
+//add filtering action
